@@ -3,5 +3,4 @@ Rules how to bet on size/weight/... of my firstborn.
 
 Check out the [HTML version](https://kopp.github.io/baby_lotto/).
 
-See branch `gh-pages` for the code of html version.
-
+The source code for that page is in the `docs` directory.
