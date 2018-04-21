@@ -1,119 +1,380 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Baby lotto by kopp</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-dark.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
-  </head>
-  <body>
-
-    <div class="wrapper">
-
-      <section>
-        <div id="title">
-          <h1>Baby-Lotto</h1>
-          <p>Wettet auf Größe, Gewicht usw. meines Erstgeborenen :-)</p>
-          <hr>
-          <span class="credits left"><a href="https://raw.githubusercontent.com/kopp/baby_lotto/master/rules_german.md">Reine Textversion</a></span>
-        </div>
-
-        <h1>
-<a id="grundidee" class="anchor" href="#grundidee" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Grundidee</h1>
-
-<ul>
-<li>Verschiedene Teilnehmer wetten auf diverse (bisher unbekannte) Daten bei unserem Kind.</li>
-<li>Der Gewinner (oder die Gewinner, falls es mehrere Gewinner gibt) bekommt den
-halben insgesamt eingesammelten Einsatz, die andere Hälfte des Geldes wird für
-das Kind angelegt.</li>
-</ul>
-
-<h1>
-<a id="wetten" class="anchor" href="#wetten" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Wetten</h1>
-
-<p>Gewettet werden kann auf</p>
-
-<ol>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Baby-Lotto</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style type="text/css">
+  /*
+   * I add this to html files generated with pandoc.
+   */
+  
+  html {
+    font-size: 100%;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  body {
+    color: #444;
+    font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+    font-size: 12px;
+    line-height: 1.7;
+    padding: 1em;
+    margin: auto;
+    max-width: 42em;
+    background: #fefefe;
+  }
+  
+  a {
+    color: #0645ad;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: #0b0080;
+  }
+  
+  a:hover {
+    color: #06e;
+  }
+  
+  a:active {
+    color: #faa700;
+  }
+  
+  a:focus {
+    outline: thin dotted;
+  }
+  
+  *::-moz-selection {
+    background: rgba(255, 255, 0, 0.3);
+    color: #000;
+  }
+  
+  *::selection {
+    background: rgba(255, 255, 0, 0.3);
+    color: #000;
+  }
+  
+  a::-moz-selection {
+    background: rgba(255, 255, 0, 0.3);
+    color: #0645ad;
+  }
+  
+  a::selection {
+    background: rgba(255, 255, 0, 0.3);
+    color: #0645ad;
+  }
+  
+  p {
+    margin: 1em 0;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #111;
+    line-height: 125%;
+    margin-top: 2em;
+    font-weight: normal;
+  }
+  
+  h4, h5, h6 {
+    font-weight: bold;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  h2 {
+    font-size: 2em;
+  }
+  
+  h3 {
+    font-size: 1.5em;
+  }
+  
+  h4 {
+    font-size: 1.2em;
+  }
+  
+  h5 {
+    font-size: 1em;
+  }
+  
+  h6 {
+    font-size: 0.9em;
+  }
+  
+  blockquote {
+    color: #666666;
+    margin: 0;
+    padding-left: 3em;
+    border-left: 0.5em #EEE solid;
+  }
+  
+  hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #eee;
+    margin: 1em 0;
+    padding: 0;
+  }
+  
+  pre, code, kbd, samp {
+    color: #000;
+    font-family: monospace, monospace;
+    _font-family: 'courier new', monospace;
+    font-size: 0.98em;
+  }
+  
+  pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  b, strong {
+    font-weight: bold;
+  }
+  
+  dfn {
+    font-style: italic;
+  }
+  
+  ins {
+    background: #ff9;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  mark {
+    background: #ff0;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  
+  sup {
+    top: -0.5em;
+  }
+  
+  sub {
+    bottom: -0.25em;
+  }
+  
+  ul, ol {
+    margin: 1em 0;
+    padding: 0 0 0 2em;
+  }
+  
+  li p:last-child {
+    margin-bottom: 0;
+  }
+  
+  ul ul, ol ol {
+    margin: .3em 0;
+  }
+  
+  dl {
+    margin-bottom: 1em;
+  }
+  
+  dt {
+    font-weight: bold;
+    margin-bottom: .8em;
+  }
+  
+  dd {
+    margin: 0 0 .8em 2em;
+  }
+  
+  dd:last-child {
+    margin-bottom: 0;
+  }
+  
+  img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle;
+  }
+  
+  figure {
+    display: block;
+    text-align: center;
+    margin: 1em 0;
+  }
+  
+  figure img {
+    border: none;
+    margin: 0 auto;
+  }
+  
+  figcaption {
+    font-size: 0.8em;
+    font-style: italic;
+    margin: 0 0 .8em;
+  }
+  
+  table {
+    margin-bottom: 2em;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+  
+  table th {
+    padding: .2em 1em;
+    background-color: #eee;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+  }
+  
+  table td {
+    padding: .2em 1em;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    vertical-align: top;
+  }
+  
+  .author {
+    font-size: 1.2em;
+    text-align: center;
+  }
+  
+  @media only screen and (min-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+  }
+  @media print {
+    * {
+      background: transparent !important;
+      color: black !important;
+      filter: none !important;
+      -ms-filter: none !important;
+    }
+  
+    body {
+      font-size: 12pt;
+      max-width: 100%;
+    }
+  
+    a, a:visited {
+      text-decoration: underline;
+    }
+  
+    hr {
+      height: 1px;
+      border: 0;
+      border-bottom: 1px solid black;
+    }
+  
+    a[href]:after {
+      content: " (" attr(href) ")";
+    }
+  
+    abbr[title]:after {
+      content: " (" attr(title) ")";
+    }
+  
+    .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+      content: "";
+    }
+  
+    pre, blockquote {
+      border: 1px solid #999;
+      padding-right: 1em;
+      page-break-inside: avoid;
+    }
+  
+    tr, img {
+      page-break-inside: avoid;
+    }
+  
+    img {
+      max-width: 100% !important;
+    }
+  
+    @page :left {
+      margin: 15mm 20mm 15mm 10mm;
+  }
+  
+    @page :right {
+      margin: 15mm 10mm 15mm 20mm;
+  }
+  
+    p, h2, h3 {
+      orphans: 3;
+      widows: 3;
+    }
+  
+    h2, h3 {
+      page-break-after: avoid;
+    }
+  }
+  </style>
+</head>
+<body>
+<header>
+<h1 class="title">Baby-Lotto</h1>
+</header>
+<p>Wettet auf Größe, Gewicht usw. unseres Zweitgeborenen :-)</p>
+<h1 id="die-wette">Die Wette</h1>
+<p>Einsatz: 5 Euro.</p>
+<p>Gewettet wird auf</p>
+<ol type="1">
 <li>Gewicht (in g, auf 10 g gerundet)</li>
 <li>Geschlecht (männlich oder weiblich)</li>
 <li>Größe (in cm auf 1 cm gerundet)</li>
 <li>Tag (Gregorianischer Kalender)</li>
 <li>Uhrzeit (Uhrzeit zwischen 0:00 und 23.59 auf 1 min gerundet)</li>
 </ol>
-
-<p>jeweils wie auf dem ersten offiziellen Dokument angegeben.</p>
-
-<p>Dabei muss jeder Teilnehmer f&uuml;r <em>alle</em> angegebenen Werte einen Tipp abgeben.
-<i>Beispiel: Tobias wettet, dass am 27.10. um 21.34 Uhr ein M&auml;dchen mit 52
-    cm und 3435 g geboren wird.</i>
-</p>
-
-<h1>
-<a id="einsatz" class="anchor" href="#einsatz" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Einsatz</h1>
-
-<p>5 Euro</p>
-
-<p>Teilnahmeberechtigt sind alle, die den Einsatz bezahlen können (oder einen
-Bürgen aus unserem Freundes-/Familien- oder Bekanntenkreis finden) --
-insbesondere auch Haustiere, Gegenstände, virtuelle Freunde usw.
-Wer also mehrere Tipps abgeben will, der kann selbst teilnehmen und dann sein
-Haustier oder einen seiner imaginären Freunde überreden, auch teilzunehmen,
-und dann in dessen Namen Geld einsetzen.</p>
-
-<p>Um beim Gewinnspiel teilzunehmen, reicht es, einen der Elternteile in spe zu
-kontaktieren und die Tipps und den Namen des Teilnehmers mitzuteilen oder 5
-Euro mit den Tipps und dem Namen des Teilnehmers auf Michis Konto zu
-überweisen.</p>
-
-<!-- use this to embed the bank account information
-<pre><code>Inhaber:    Name
-IBAN:       DE52 ...
-BIC:        FOO...
-Bank:       bank Name
-</code></pre>
--->
-
+<p>jeweils wie auf dem ersten offiziellen Dokument angegeben. Dabei muss jeder Teilnehmer für <em>alle</em> angegebenen Werte einen Tipp abgeben.</p>
+<p><em>Beispiel: Tobias wettet, dass am 7.9. um 21.34 Uhr ein Mädchen mit 52 cm und 3435 g geboren wird.</em></p>
+<p>Der Gewinner (oder die Gewinner, falls es mehrere Gewinner gibt) bekommt den halben insgesamt eingesammelten Einsatz, die andere Hälfte des Geldes geht an das Kind.</p>
+<p>Um mehrere Tips abzugeben, kann man das eigene Haustier, Pflanzen, imaginäre Freunde, … mit jeweils 5 Euro Einsatz mitwetten lassen.</p>
+<h1 id="teilnehmen">Teilnehmen</h1>
+<p>Einen der Elternteile in spe kontaktieren, oder eine Überweisung mit den Tips im Betreff an</p>
+<pre><code>Inhaber:    Michael Kopp
+IBAN:       DE53 2004 1133 0734 9772 00
+BIC:        COBADEHD001
+Bank:       comdirect bank AG, Quickborn</code></pre>
 <p>Es werden nur Wetten gewertet, die vor dem Einsatz der Wehen eingereicht wurden.</p>
-
-<h1>
-<a id="hinweise" class="anchor" href="#hinweise" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hinweise</h1>
-
-<p>Die Wette ist beendet; das Kind ist geboren.</p>
-
-<h1>
-<a id="gewinnen" class="anchor" href="#gewinnen" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Gewinnen</h1>
-
-<p>Bei jedem Wert (Gewicht, Größe, ...) bekommen alle diejenigen, deren Tipp am
-nächstem an dem offiziell festgestellten Wert liegt, 8 Punkte.
-Alle, die am zweit-n&auml;chsten an dem Wert lagen, bekommen 4 Punkte, am
-dritt-n&auml;chsten 2 Punkte und am viert-n&auml;chsten einen Punkt -- alle
-anderen 0 Punkte.
-Sind mehrere Teilnehmer gleich nah an dem offiziellen Wert, bekommt jeder die
-gleiche Punktzahl.
-Beim <em>Geschlecht</em> bekommt jeder, der es richtig tippt, 4 Punkte, wer
-falsch tippt 0 Punkte.</p>
-
-<p>Die Punkte werden für jeden Teilnehmer separat addiert.
-Gesamtgewinner ist der Teilnehmer mit den meisten Punkten.
-Haben mehrere Teilnehmer die gleiche Punktzahl, teilen sie sich den Gewinn, der
-aus der Hälfte des eingesammelten Einsatzes besteht.</p>
-
-
-      </section>
-
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-
-  </body>
+<h1 id="hinweise">Hinweise</h1>
+<ul>
+<li>Errechneter Geburtstermin: 6. September 2018</li>
+<li>Werte beim Erstes Kind: Gewicht 2995 g, Geschlecht weiblich, Größe 51 cm, Datum 2 Tage vor errechnetem Termin, 12.00 Uhr.</li>
+</ul>
+</body>
 </html>
