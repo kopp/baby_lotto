@@ -25,12 +25,12 @@ Der Gewinner (oder die Gewinner, falls es mehrere Gewinner gibt)
 bekommt den halben insgesamt eingesammelten Einsatz, die andere
 Hälfte des Geldes geht an das Kind.
 
-Um mehrere Tips abzugeben, kann man das eigene Haustier, Pflanzen, imaginäre
+Um mehrere Tipps abzugeben, kann man das eigene Haustier, Pflanzen, imaginäre
 Freunde, ... mit jeweils 5 Euro Einsatz mitwetten lassen.
 
 # Teilnehmen
 
-Einen der Elternteile in spe kontaktieren, oder eine Überweisung mit den Tips
+Einen der Elternteile in spe kontaktieren, oder eine Überweisung mit den Tipps
 im Betreff an
 
     Inhaber:    Michael Kopp
@@ -45,5 +45,5 @@ wurden.
 # Hinweise
 
 - Errechneter Geburtstermin: 6. September 2018
-- Werte beim Erstes Kind: Gewicht 2995 g, Geschlecht weiblich, Größe 51 cm,
-  Datum 2 Tage vor errechnetem Termin, 12.00 Uhr.
+- Werte beim ersten Kind: Gewicht 2995 g, Geschlecht weiblich, Größe 51 cm,
+  Datum 2 Tage vor errechnetem Termin, Uhrzeit 12.00 Uhr.
