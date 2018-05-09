@@ -10,9 +10,9 @@ Gewettet wird auf
 
 1.  Gewicht (in g, auf 10 g gerundet)
 2.  Geschlecht (männlich oder weiblich)
-3.  Größe (in cm auf 1 cm gerundet)
+3.  Größe (in cm, auf 1 cm gerundet)
 4.  Tag (Gregorianischer Kalender)
-5.  Uhrzeit (Uhrzeit zwischen 0:00 und 23.59 auf 1 min gerundet)
+5.  Uhrzeit (Uhrzeit zwischen 0:00 und 23.59, auf 1 min gerundet)
 
 jeweils wie auf dem ersten offiziellen Dokument angegeben.
 Dabei muss jeder Teilnehmer für *alle* angegebenen Werte einen Tipp
